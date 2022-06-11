@@ -1,0 +1,2 @@
+class Masterdatum < ApplicationRecord
+end

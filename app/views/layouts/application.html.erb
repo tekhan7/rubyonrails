@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ActixOne Customer Installations</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= favicon_link_tag asset_path('amdocs-2021-logomark-a-rgb.png') %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag "dhtmlxgrid", :media => "all" %>
+    <%= stylesheet_link_tag "skins/dhtmlxgrid_dhx_skyblue", :media=> "all" %>
+    
+    <%= javascript_include_tag "dhtmlxcommon" %>
+    <%= javascript_include_tag "dhtmlxgrid" %>
+    <%= javascript_include_tag "dhtmlxdataprocessor" %>
+    <%= javascript_include_tag "ext/dhtmlxgrid_filter" %>
+    <%= csrf_meta_tags %>
+
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <link href="startbootstrap-sb-admin/dist/css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+
+
+</html>
